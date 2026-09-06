@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Server Installation Guide</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="bootstrap/jquery-ui.min.css" rel="stylesheet">
+<link href="install.css" rel="stylesheet">
+<link href="server.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#tbMain").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_" style="position:absolute;left:16px;top:12px;width:1100px;height:60px;z-index:42;">
+<img src="images/img0001.png" id="" alt="" width="1100" height="60" style="width:1100px;height:60px;"></div>
+<div id="tbMain" style="position:absolute;left:16px;top:72px;width:1016px;height:1018px;z-index:43;">
+<ul>
+<li role="presentation"><a href="#tbmain-page-1"><span>Step 1</span></a></li>
+<li role="presentation"><a href="#tbmain-page-2"><span>Step 2</span></a></li>
+<li role="presentation"><a href="#tbmain-page-3"><span>Step 3</span></a></li>
+<li role="presentation"><a href="#tbmain-page-4"><span>Step 4</span></a></li>
+<li role="presentation"><a href="#tbmain-page-5"><span>Step 5</span></a></li>
+<li role="presentation"><a href="#tbmain-page-6"><span>Step 6</span></a></li>
+<li role="presentation"><a href="#tbmain-page-7"><span>Step 7</span></a></li>
+<li role="presentation"><a href="#tbmain-page-8"><span>Step 8</span></a></li>
+<li role="presentation"><a href="#tbmain-page-9"><span>Step 9</span></a></li>
+<li role="presentation"><a href="#tbmain-page-10"><span>Step 10</span></a></li>
+<li role="presentation"><a href="#tbmain-page-11"><span>Step 11</span></a></li>
+<li role="presentation"><a href="#tbmain-page-12"><span>Step 12</span></a></li>
+<li role="presentation"><a href="#tbmain-page-13"><span>Step 13</span></a></li>
+<li role="presentation"><a href="#tbmain-page-14"><span>Step 14</span></a></li>
+<li role="presentation"><a href="#tbmain-page-15"><span>Step 15</span></a></li>
+<li role="presentation"><a href="#tbmain-page-16"><span>Step 16</span></a></li>
+<li role="presentation"><a href="#tbmain-page-17"><span>Step 17</span></a></li>
+<li role="presentation"><a href="#tbmain-page-18"><span>Step 18</span></a></li>
+<li role="presentation"><a href="#tbmain-page-19"><span>Step 19</span></a></li>
+<li role="presentation"><a href="#tbmain-page-20"><span>Step 20</span></a></li>
+<li role="presentation"><a href="#tbmain-page-21"><span>Step 21</span></a></li>
+<li role="presentation"><a href="#tbmain-page-22"><span>Step 22</span></a></li>
+<li role="presentation"><a href="#tbmain-page-23"><span>Step 23</span></a></li>
+<li role="presentation"><a href="#tbmain-page-24"><span>Step 24</span></a></li>
+<li role="presentation"><a href="#tbmain-page-25"><span>Step 25</span></a></li>
+<li role="presentation"><a href="#tbmain-page-26"><span>Step 26</span></a></li>
+<li role="presentation"><a href="#tbmain-page-27"><span>Step 27</span></a></li>
+<li role="presentation"><a href="#tbmain-page-28"><span>Step 28</span></a></li>
+<li role="presentation"><a href="#tbmain-page-29"><span>Step 29</span></a></li>
+<li role="presentation"><a href="#tbmain-page-30"><span>Step 30</span></a></li>
+</ul>
+<div style="height:1018px;" id="tbmain-page-1">
+<div id="wb_Text1" style="position:absolute;left:6px;top:16px;width:971px;height:52px;z-index:0;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>This application is built for Windows 11 (Version 25H2) and requires a minimum of 4 GB of RAM and 250 GB of available storage space.</strong></span></div>
+<div id="wb_Image1" style="position:absolute;left:214px;top:412px;width:554px;height:255px;z-index:1;">
+<img src="images/ges24s1703.jpg" id="Image1" alt="" width="584" height="269"></div>
+<div id="wb_Text2" style="position:absolute;left:6px;top:97px;width:971px;height:232px;z-index:2;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>1. Recommended Windows Configuration:<br><br>&nbsp;&nbsp;&nbsp; - Computer Name: SERVER-PC (Suggested)<br>&nbsp;&nbsp;&nbsp; - Username: ADMIN (Suggested; must have administrator privileges)<br>&nbsp;&nbsp;&nbsp; - Password: [Required]<br><br>3. Assuming your Windows 11 is freshly installed.<br><br>4. Create database folder &quot;MSSQL&quot; in Drive C or D.</strong></span></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-2">
+<div id="wb_Image14" style="position:absolute;left:23px;top:17px;width:794px;height:356px;z-index:3;">
+<img src="images/vnx8i8llyo.jpg" id="Image14" alt="" width="794" height="356"></div>
+<div id="wb_Text5" style="position:absolute;left:76px;top:384px;width:827px;height:39px;z-index:4;">
+<span style="color:#000000;font-family:Tahoma;font-size:16px;">C:\&gt;netsh advfirewall firewall set rule group=&quot;File and Printer Sharing&quot; new enable=Yes<br>C:\&gt;netsh advfirewall firewall add rule name=&quot;Open Port 1433&quot; dir=in action=allow protocol=TCP localport=1433</span></div>
+<div id="wb_Image15" style="position:absolute;left:76px;top:446px;width:927px;height:276px;z-index:5;">
+<img src="images/txmevormfe.jpg" id="Image15" alt="" width="927" height="264"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-3">
+<div id="wb_Image6" style="position:absolute;left:119px;top:144px;width:785px;height:588px;z-index:6;">
+<img src="images/pi56u9ro0x.jpg" id="Image6" alt="" width="815" height="610"></div>
+<div id="wb_Text4" style="position:absolute;left:26px;top:29px;width:971px;height:77px;z-index:7;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>The application requires the following software components listed below.<br><br>The programmer will be provided these files to you.</strong></span></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-4">
+<div id="wb_Image5" style="position:absolute;left:62px;top:143px;width:877px;height:619px;z-index:8;">
+<img src="images/ldp6bycbpd.jpg" id="Image5" alt="" width="907" height="640"></div>
+<div id="wb_Text3" style="position:absolute;left:26px;top:33px;width:971px;height:77px;z-index:9;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>1. Open &quot;1) Microsoft SQL Server 2025 Express Edition&quot;.<br><br>2. Double click setup.exe.</strong></span></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-5">
+<div id="wb_Image4" style="position:absolute;left:97px;top:32px;width:797px;height:702px;z-index:10;">
+<img src="images/47pagqblg3.jpg" id="Image4" alt="" width="827" height="728"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-6">
+<div id="wb_Image3" style="position:absolute;left:62px;top:24px;width:795px;height:699px;z-index:11;">
+<img src="images/dvoxbce209.jpg" id="Image3" alt="" width="825" height="725"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-7">
+<div id="wb_Image2" style="position:absolute;left:61px;top:25px;width:801px;height:701px;z-index:12;">
+<img src="images/cywgl2jqcv.jpg" id="Image2" alt="" width="831" height="727"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-8">
+<div id="wb_Image7" style="position:absolute;left:87px;top:39px;width:792px;height:693px;z-index:13;">
+<img src="images/pt1ntmim7h.jpg" id="Image7" alt="" width="822" height="719"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-9">
+<div id="wb_Image8" style="position:absolute;left:101px;top:45px;width:794px;height:698px;z-index:14;">
+<img src="images/ur6xb2xhsi.jpg" id="Image8" alt="" width="824" height="724"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-10">
+<div id="wb_Image9" style="position:absolute;left:90px;top:44px;width:801px;height:702px;z-index:15;">
+<img src="images/fvrh2imcb5.jpg" id="Image9" alt="" width="831" height="728"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-11">
+<div id="wb_Image10" style="position:absolute;left:85px;top:38px;width:796px;height:698px;z-index:16;">
+<img src="images/86bvmq6srm.jpg" id="Image10" alt="" width="826" height="724"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-12">
+<div id="wb_Image11" style="position:absolute;left:87px;top:26px;width:800px;height:701px;z-index:17;">
+<img src="images/jfpribwkaq.jpg" id="Image11" alt="" width="830" height="727"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-13">
+<div id="wb_Image12" style="position:absolute;left:98px;top:27px;width:805px;height:702px;z-index:18;">
+<img src="images/elo7q4xsoo.jpg" id="Image12" alt="" width="835" height="728"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-14">
+<div id="wb_Image13" style="position:absolute;left:96px;top:36px;width:795px;height:699px;z-index:19;">
+<img src="images/b8mq93bfpx.jpg" id="Image13" alt="" width="825" height="725"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-15">
+<div id="wb_Text6" style="position:absolute;left:13px;top:14px;width:971px;height:26px;z-index:20;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>Installation of SQL Server Management Studio.</strong></span></div>
+<div id="wb_Image16" style="position:absolute;left:103px;top:69px;width:817px;height:413px;z-index:21;">
+<img src="images/wj06e210l1.jpg" id="Image16" alt="" width="847" height="429"></div>
+<div id="wb_Image17" style="position:absolute;left:273px;top:501px;width:477px;height:279px;z-index:22;">
+<img src="images/edv0psb2jh.jpg" id="Image17" alt="" width="507" height="297"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-16">
+<div id="wb_Image18" style="position:absolute;left:22px;top:33px;width:943px;height:530px;z-index:23;">
+<img src="images/ymiwb4elxt.jpg" id="Image18" alt="" width="973" height="548"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-17">
+<div id="wb_Image19" style="position:absolute;left:40px;top:42px;width:928px;height:484px;z-index:24;">
+<img src="images/nq9v7e8s8y.jpg" id="Image19" alt="" width="958" height="499"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-18">
+<div id="wb_Text7" style="position:absolute;left:11px;top:22px;width:971px;height:26px;z-index:25;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>Configure SQL Server Accessibility.</strong></span></div>
+<div id="wb_Image20" style="position:absolute;left:170px;top:87px;width:631px;height:657px;z-index:26;">
+<img src="images/5ms8tfm7ig.jpg" id="Image20" alt="" width="661" height="688"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-19">
+<div id="wb_Image21" style="position:absolute;left:40px;top:24px;width:936px;height:623px;z-index:27;">
+<img src="images/8cfmfewhin.jpg" id="Image21" alt="" width="966" height="643"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-20">
+<div id="wb_Image22" style="position:absolute;left:79px;top:36px;width:776px;height:623px;z-index:28;">
+<img src="images/ee710jwvs0.jpg" id="Image22" alt="" width="806" height="647"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-21">
+<div id="wb_Text8" style="position:absolute;left:25px;top:28px;width:971px;height:103px;z-index:29;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>1. At this point Restart your server.<br><br>2. Copy Initial Database files to SQL Server Data Folder.<br></strong></span></div>
+<div id="wb_Image25" style="position:absolute;left:25px;top:141px;width:941px;height:497px;z-index:30;">
+<img src="images/weuug4y7mw.jpg" id="Image25" alt="" width="971" height="513"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-22">
+<div id="wb_Image23" style="position:absolute;left:151px;top:80px;width:613px;height:636px;z-index:31;">
+<img src="images/2j3bss3f9p.jpg" id="Image23" alt="" width="643" height="668"></div>
+<div id="wb_Text9" style="position:absolute;left:22px;top:14px;width:971px;height:26px;z-index:32;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>Look for SQL Server Management Studio 22 in the Start Menu.</strong></span></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-23">
+<div id="wb_Image24" style="position:absolute;left:58px;top:39px;width:878px;height:446px;z-index:33;">
+<img src="images/wmcuq7u2xl.jpg" id="Image24" alt="" width="908" height="461"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-24">
+<div id="wb_Image26" style="position:absolute;left:65px;top:31px;width:843px;height:714px;z-index:34;">
+<img src="images/7th3dwsq9d.jpg" id="Image26" alt="" width="873" height="739"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-25">
+<div id="wb_Image27" style="position:absolute;left:116px;top:36px;width:776px;height:515px;z-index:35;">
+<img src="images/xnj8cj3t38.jpg" id="Image27" alt="" width="806" height="535"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-26">
+<div id="wb_Image27" style="position:absolute;left:116px;top:36px;width:776px;height:515px;z-index:36;">
+<img src="images/xnj8cj3t38.jpg" id="Image27" alt="" width="806" height="535"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-27">
+<div id="wb_Image30" style="position:absolute;left:78px;top:29px;width:847px;height:714px;z-index:37;">
+<img src="images/9qgwnh04yv.jpg" id="Image30" alt="" width="877" height="739"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-28">
+<div id="wb_Image29" style="position:absolute;left:119px;top:37px;width:723px;height:661px;z-index:38;">
+<img src="images/9bskq7upxy.jpg" id="Image29" alt="" width="753" height="688"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-29">
+<div id="wb_Image32" style="position:absolute;left:305px;top:396px;width:574px;height:525px;z-index:39;">
+<img src="images/36mc71hevt.jpg" id="Image32" alt="" width="604" height="553"></div>
+<div id="wb_Image31" style="position:absolute;left:34px;top:16px;width:332px;height:343px;z-index:40;">
+<img src="images/eyee7iwvtp.jpg" id="Image31" alt="" width="362" height="375"></div>
+</div>
+<div style="height:1018px;" id="tbmain-page-30">
+<div id="wb_Text10" style="position:absolute;left:23px;top:24px;width:971px;height:26px;z-index:41;">
+<span style="color:#000000;font-family:Tahoma;font-size:21px;"><strong>Done.</strong></span></div>
+</div>
+</div>
+</body>
+</html>

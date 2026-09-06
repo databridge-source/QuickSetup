@@ -1,0 +1,59 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#cmdServer
+{
+   box-sizing: border-box;
+   line-height: 72px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid #DC143C;
+   border-radius: 4px;
+   background-color: #DC143C;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#cmdServer:focus
+{
+   outline: 0;
+}
+#cmdClient
+{
+   box-sizing: border-box;
+   line-height: 72px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid #DC143C;
+   border-radius: 4px;
+   background-color: #DC143C;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#cmdClient:focus
+{
+   outline: 0;
+}
